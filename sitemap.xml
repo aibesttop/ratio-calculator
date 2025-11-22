@@ -4,12 +4,12 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <!--
-        SEO优化的站点地图
-        优先级说明：1.0 = 最高优先级，0.5 = 中等优先级
-        更改频率：always, hourly, daily, weekly, monthly, yearly, never
+        SEO Optimized Sitemap
+        Priority: 1.0 = Highest priority, 0.5 = Medium priority
+        Change frequency: always, hourly, daily, weekly, monthly, yearly, never
     -->
 
-    <!-- 主页 - 债务收入比计算器 -->
+    <!-- Homepage - Debt-to-Income Ratio Calculator -->
     <url>
         <loc>https://ratio-calculator.com/</loc>
         <lastmod>2024-11-22</lastmod>
@@ -17,7 +17,7 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- FAQ页面 (如果单独页面) -->
+    <!-- FAQ Page (if separate page) -->
     <url>
         <loc>https://ratio-calculator.com/#faq</loc>
         <lastmod>2024-11-22</lastmod>
@@ -25,7 +25,7 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- 使用条款 (未来可添加) -->
+    <!-- Terms of Use (can be added in future) -->
     <!--
     <url>
         <loc>https://ratio-calculator.com/terms</loc>
@@ -35,7 +35,7 @@
     </url>
     -->
 
-    <!-- 隐私政策 (未来可添加) -->
+    <!-- Privacy Policy (can be added in future) -->
     <!--
     <url>
         <loc>https://ratio-calculator.com/privacy</loc>
@@ -45,7 +45,7 @@
     </url>
     -->
 
-    <!-- 联系我们 (未来可添加) -->
+    <!-- Contact Us (can be added in future) -->
     <!--
     <url>
         <loc>https://ratio-calculator.com/contact</loc>

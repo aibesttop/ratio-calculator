@@ -1,210 +1,210 @@
-# 💰 债务收入比计算器 (DTI Calculator)
+# 💰 Debt-to-Income Ratio Calculator (DTI Calculator)
 
-一个简洁、直观的债务收入比（Debt-to-Income Ratio）计算器，帮助用户评估财务健康状况和贷款资格。
+A clean, intuitive debt-to-income ratio (DTI) calculator that helps users assess their financial health and loan eligibility.
 
-## 📋 项目简介
+## 📋 Project Overview
 
-债务收入比（DTI）是金融机构评估借款人偿债能力的核心指标。本计算器通过简单的界面输入，自动计算DTI并提供专业的财务健康评估和改善建议。
+The Debt-to-Income Ratio (DTI) is a core metric financial institutions use to evaluate a borrower's ability to repay loans. This calculator automatically computes DTI through a simple interface and provides professional financial health assessments and improvement recommendations.
 
-## 🎯 核心功能
+## 🎯 Core Features
 
-- ✅ **精准计算**: 自动计算债务收入比（DTI）百分比
-- 📊 **可视化展示**: 清晰的结果展示和颜色编码
-- 🎨 **评级系统**: 根据DTI值提供四级评级（优秀/良好/一般/需改善）
-- 💡 **智能建议**: 基于计算结果提供个性化财务改善建议
-- 📌 **标准参考**: 展示贷款机构的DTI标准范围
-- 📱 **响应式设计**: 完美支持手机、平板和桌面设备
-- ⌨️ **键盘友好**: 支持回车键快速计算
+- ✅ **Accurate Calculation**: Automatically calculates debt-to-income ratio (DTI) percentage
+- 📊 **Visual Display**: Clear results presentation with color coding
+- 🎨 **Rating System**: Four-tier rating based on DTI value (Excellent/Good/Fair/Needs Improvement)
+- 💡 **Smart Recommendations**: Personalized financial improvement suggestions based on calculation results
+- 📌 **Standards Reference**: Display lender DTI standard ranges
+- 📱 **Responsive Design**: Perfect support for mobile, tablet, and desktop devices
+- ⌨️ **Keyboard Friendly**: Supports Enter key for quick calculation
 
-## 🧮 DTI 计算公式
+## 🧮 DTI Calculation Formula
 
 ```
-DTI = (月度债务总额 ÷ 月度总收入) × 100%
+DTI = (Total Monthly Debt ÷ Total Monthly Income) × 100%
 ```
 
-### 债务包括:
-- 房贷/房租
-- 车贷
-- 信用卡最低还款额
-- 学生贷款
-- 其他个人贷款
+### Debts Include:
+- Mortgage / Rent
+- Auto loans
+- Credit card minimum payments
+- Student loans
+- Other personal loans
 
-## 📊 DTI 评级标准
+## 📊 DTI Rating Standards
 
-| DTI 范围 | 评级 | 说明 |
-|---------|------|------|
-| < 28% | 🌟 优秀 | 房贷审批优势明显，财务状况非常健康 |
-| 28% - 36% | 👍 良好 | 符合大多数贷款要求 |
-| 36% - 43% | ⚠️ 一般 | 可能需要额外条件或更高利率 |
-| > 43% | ❌ 需改善 | 贷款审批困难，建议优先降低债务 |
+| DTI Range | Rating | Description |
+|-----------|--------|-------------|
+| < 28% | 🌟 Excellent | Strong mortgage approval advantage, very healthy financial situation |
+| 28% - 36% | 👍 Good | Meets most lending requirements |
+| 36% - 43% | ⚠️ Fair | May require additional conditions or higher interest rates |
+| > 43% | ❌ Needs Improvement | Loan approval difficult, recommend prioritizing debt reduction |
 
-## 🚀 使用方法
+## 🚀 Usage
 
-1. **打开计算器**
+1. **Open the Calculator**
    ```bash
-   # 在浏览器中打开 index.html 文件
+   # Open index.html in your browser
    open index.html
    ```
 
-2. **输入收入信息**
-   - 填写月度总收入（税前）
+2. **Enter Income Information**
+   - Fill in monthly gross income (pre-tax)
 
-3. **输入债务信息**
-   - 填写各类月度债务支出
-   - 可以只填写适用的项目
+3. **Enter Debt Information**
+   - Fill in various monthly debt payments
+   - Only fill in applicable items
 
-4. **查看结果**
-   - 点击"计算 DTI"按钮
-   - 查看DTI百分比、评级和建议
+4. **View Results**
+   - Click "Calculate DTI" button
+   - View DTI percentage, rating, and recommendations
 
-5. **重新计算**
-   - 点击"重新计算"按钮可以清空输入
+5. **Recalculate**
+   - Click "Reset Calculator" button to clear inputs
 
-## 💡 核心痛点解决方案
+## 💡 Core Pain Point Solutions
 
-### 问题 1: 不清楚贷款资格
-**解决**: 实时计算DTI并对照贷款机构标准，明确告知贷款审批可能性
+### Problem 1: Unclear about loan eligibility
+**Solution**: Real-time DTI calculation compared against lender standards, clearly indicating loan approval likelihood
 
-### 问题 2: 手动计算容易出错
-**解决**: 自动计算，避免人为错误，支持多种债务类型
+### Problem 2: Manual calculation errors
+**Solution**: Automatic calculation avoids human error, supports multiple debt types
 
-### 问题 3: 不了解财务健康状况
-**解决**: 四级评级系统 + 可视化展示 + 详细说明
+### Problem 3: Don't understand financial health status
+**Solution**: Four-tier rating system + visualization + detailed explanations
 
-### 问题 4: 缺乏改善指导
-**解决**: 基于DTI值提供个性化改善建议
+### Problem 4: Lack of improvement guidance
+**Solution**: Personalized improvement recommendations based on DTI value
 
-## 🎯 目标用户
+## 🎯 Target Users
 
-- 📝 准备申请房贷的购房者
-- 🚗 准备申请车贷的购车者
-- 💳 想了解自己财务健康状况的个人
-- 👔 财务顾问和规划师
-- 🎓 需要管理学生贷款的年轻人
+- 📝 Prospective homebuyers preparing to apply for mortgages
+- 🚗 Car buyers preparing to apply for auto loans
+- 💳 Individuals wanting to understand their financial health
+- 👔 Financial advisors and planners
+- 🎓 Young people managing student loans
 
-## 🛠️ 技术栈
+## 🛠️ Tech Stack
 
-- **HTML5**: 语义化结构 + Schema.org结构化数据
-- **CSS3**: 现代化样式和动画
-- **JavaScript (ES6+)**: 核心计算逻辑
-- **响应式设计**: 移动优先的设计理念
-- **SEO优化**: 完整的搜索引擎优化方案
+- **HTML5**: Semantic structure + Schema.org structured data
+- **CSS3**: Modern styling and animations
+- **JavaScript (ES6+)**: Core calculation logic
+- **Responsive Design**: Mobile-first design philosophy
+- **SEO Optimization**: Complete search engine optimization solution
 
-## 🔍 SEO优化特性
+## 🔍 SEO Optimization Features
 
-本项目采用了专业级的SEO优化策略，确保在搜索引擎中获得最佳排名：
+This project employs professional-grade SEO optimization strategies to ensure optimal search engine ranking:
 
-### 核心SEO元素
-- ✅ **优化的Title标签**: 包含核心关键词"债务收入比计算器"、"DTI"、"贷款资格"
-- ✅ **Meta Description**: 精准描述，吸引点击率（CTR）
-- ✅ **Meta Keywords**: 覆盖相关长尾关键词
-- ✅ **Canonical URL**: 避免重复内容问题
-- ✅ **语义化HTML**: 使用article, section, nav等HTML5标签
+### Core SEO Elements
+- ✅ **Optimized Title Tag**: Contains core keywords "debt to income ratio calculator", "DTI", "loan eligibility"
+- ✅ **Meta Description**: Precise description to improve click-through rate (CTR)
+- ✅ **Meta Keywords**: Covers relevant long-tail keywords
+- ✅ **Canonical URL**: Avoids duplicate content issues
+- ✅ **Semantic HTML**: Uses article, section, nav and other HTML5 tags
 
-### 结构化数据（Schema.org）
-- 📊 **SoftwareApplication Schema**: 标记应用程序信息
-- ❓ **FAQ Schema**: 常见问题结构化数据（提升Featured Snippets机会）
-- 🗺️ **BreadcrumbList Schema**: 面包屑导航
-- ⭐ **AggregateRating**: 虚拟评分（提升点击率）
+### Structured Data (Schema.org)
+- 📊 **SoftwareApplication Schema**: Marks application information
+- ❓ **FAQ Schema**: Structured FAQ data (increases Featured Snippets opportunity)
+- 🗺️ **BreadcrumbList Schema**: Breadcrumb navigation
+- ⭐ **AggregateRating**: Virtual rating (improves click-through rate)
 
-### 社交媒体优化
-- 📱 **Open Graph标签**: 优化Facebook/LinkedIn分享
-- 🐦 **Twitter Card**: 优化Twitter分享
-- 🖼️ **社交媒体图片**: og:image, twitter:image配置
+### Social Media Optimization
+- 📱 **Open Graph Tags**: Optimizes Facebook/LinkedIn sharing
+- 🐦 **Twitter Card**: Optimizes Twitter sharing
+- 🖼️ **Social Media Images**: og:image, twitter:image configuration
 
-### 内容优化
-- 📝 **6个FAQ问答**: 覆盖用户常见搜索意图
-- 💡 **3个信息卡片**: 增加内容深度和关键词密度
-- 🔑 **关键词策略**:
-  - 主关键词: 债务收入比、DTI计算器
-  - 长尾关键词: 贷款资格评估、房贷计算、财务健康评估
-  - LSI关键词: 车贷、信用卡、学生贷款、信用评分
+### Content Optimization
+- 📝 **6 FAQ Q&As**: Covers common user search intent
+- 💡 **3 Information Cards**: Increases content depth and keyword density
+- 🔑 **Keyword Strategy**:
+  - Primary keywords: debt to income ratio, DTI calculator
+  - Long-tail keywords: loan eligibility assessment, mortgage calculator, financial health assessment
+  - LSI keywords: auto loan, credit cards, student loans, credit score
 
-### 技术SEO
-- 🗺️ **sitemap.xml**: 完整的站点地图
-- 🤖 **robots.txt**: 搜索引擎爬虫优化配置
-- 📱 **移动友好**: 100%响应式设计
-- ⚡ **性能优化**: 零外部依赖，快速加载
-- 🔒 **HTTPS就绪**: 安全连接支持
+### Technical SEO
+- 🗺️ **sitemap.xml**: Complete sitemap
+- 🤖 **robots.txt**: Search engine crawler optimization configuration
+- 📱 **Mobile Friendly**: 100% responsive design
+- ⚡ **Performance Optimization**: Zero external dependencies, fast loading
+- 🔒 **HTTPS Ready**: Secure connection support
 
-### 预期SEO效果
-- 🎯 **目标关键词**: "债务收入比计算器"、"DTI计算器"、"贷款资格计算"
-- 📈 **Featured Snippets**: FAQ结构化数据提升精选摘要展示机会
-- 🌟 **Rich Snippets**: 评分、价格等丰富摘要信息
-- 📊 **搜索意图覆盖**: 信息型、导航型、交易型查询全覆盖
+### Expected SEO Results
+- 🎯 **Target Keywords**: "debt to income ratio calculator", "DTI calculator", "loan eligibility calculator"
+- 📈 **Featured Snippets**: FAQ structured data increases featured snippet display opportunity
+- 🌟 **Rich Snippets**: Rating, price and other rich snippet information
+- 📊 **Search Intent Coverage**: Informational, navigational, and transactional query coverage
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 ratio-calculator/
-├── index.html          # 主页面（包含SEO优化和结构化数据）
-├── styles.css          # 样式文件（包含FAQ和Info section样式）
-├── script.js           # JavaScript 逻辑
-├── sitemap.xml         # 站点地图（SEO）
-├── robots.txt          # 爬虫配置（SEO）
-└── README.md          # 项目说明
+├── index.html          # Main page (includes SEO optimization and structured data)
+├── styles.css          # Stylesheet (includes FAQ and Info section styles)
+├── script.js           # JavaScript logic
+├── sitemap.xml         # Sitemap (SEO)
+├── robots.txt          # Crawler configuration (SEO)
+└── README.md          # Project documentation
 ```
 
-## 🎨 设计特色
+## 🎨 Design Features
 
-- **渐变背景**: 现代化的紫色渐变背景
-- **卡片设计**: 清晰的内容分层
-- **颜色编码**: 根据DTI评级使用不同颜色
-- **平滑动画**: 优雅的过渡效果
-- **提示系统**: 悬停显示详细说明
+- **Gradient Background**: Modern purple gradient background
+- **Card Design**: Clear content layering
+- **Color Coding**: Different colors based on DTI rating
+- **Smooth Animations**: Elegant transition effects
+- **Tooltip System**: Hover to display detailed explanations
 
-## 📱 浏览器兼容性
+## 📱 Browser Compatibility
 
-- ✅ Chrome (推荐)
+- ✅ Chrome (Recommended)
 - ✅ Firefox
 - ✅ Safari
 - ✅ Edge
-- ✅ 移动端浏览器
+- ✅ Mobile browsers
 
-## 🔒 隐私说明
+## 🔒 Privacy Statement
 
-本计算器完全在浏览器本地运行，不会收集、存储或传输任何用户数据。所有计算都在客户端完成。
+This calculator runs entirely in the browser locally and does not collect, store, or transmit any user data. All calculations are completed on the client side.
 
-## 📝 使用示例
+## 📝 Usage Examples
 
-### 示例 1: 优秀的财务状况
+### Example 1: Excellent Financial Situation
 ```
-月收入: ¥20,000
-房贷: ¥3,000
-车贷: ¥1,500
-DTI = 22.5% → 🌟 优秀
-```
-
-### 示例 2: 需要改善的情况
-```
-月收入: ¥10,000
-房贷: ¥3,500
-车贷: ¥1,500
-信用卡: ¥800
-其他: ¥500
-DTI = 63% → ❌ 需改善
+Monthly Income: $6,000
+Mortgage: $1,200
+Auto Loan: $400
+DTI = 26.7% → 🌟 Excellent
 ```
 
-## 🔄 未来改进计划
+### Example 2: Needs Improvement
+```
+Monthly Income: $3,500
+Mortgage: $1,200
+Auto Loan: $500
+Credit Card: $300
+Other: $200
+DTI = 62.9% → ❌ Needs Improvement
+```
 
-- [ ] 添加多语言支持（英文、日文等）
-- [ ] 增加数据可视化图表
-- [ ] 支持保存历史记录
-- [ ] 添加目标DTI计算器
-- [ ] 导出PDF报告功能
-- [ ] 增加更多财务指标计算
+## 🔄 Future Improvement Plans
 
-## 📄 免责声明
+- [ ] Add multi-language support (Spanish, French, etc.)
+- [ ] Add data visualization charts
+- [ ] Support saving history
+- [ ] Add target DTI calculator
+- [ ] PDF report export function
+- [ ] Add more financial metric calculations
 
-本计算器仅供参考，实际贷款审批标准以金融机构为准。不同贷款机构可能有不同的DTI要求，建议在申请贷款前咨询专业财务顾问。
+## 📄 Disclaimer
 
-## 👨‍💻 开发者
+This calculator is for reference only. Actual loan approval standards are determined by financial institutions. Different lenders may have different DTI requirements. It's recommended to consult a professional financial advisor before applying for loans.
 
-本项目基于用户需求调研开发，旨在帮助用户更好地理解和管理个人财务健康状况。
+## 👨‍💻 Developer
 
-## 📞 反馈与建议
+This project is developed based on user needs research, aiming to help users better understand and manage their personal financial health.
 
-如有任何问题或建议，欢迎提出 Issue 或 Pull Request。
+## 📞 Feedback and Suggestions
+
+If you have any questions or suggestions, feel free to submit an Issue or Pull Request.
 
 ---
 

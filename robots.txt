@@ -1,37 +1,37 @@
-# robots.txt for 债务收入比计算器
-# SEO优化配置
+# robots.txt for Debt-to-Income Ratio Calculator
+# SEO Optimization Configuration
 
-# 允许所有搜索引擎抓取
+# Allow all search engines to crawl
 User-agent: *
 Allow: /
 
-# 特别允许主要搜索引擎
+# Specifically allow major search engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
 User-agent: Baiduspider
 Allow: /
 
-User-agent: Sogou web spider
-Allow: /
-
-User-agent: 360Spider
-Allow: /
-
-# 禁止抓取的资源（如果有）
+# Disallow crawling of resources (if any)
 # Disallow: /admin/
 # Disallow: /private/
 
-# 站点地图位置
+# Sitemap location
 Sitemap: https://ratio-calculator.com/sitemap.xml
 
-# 抓取延迟（可选，避免服务器过载）
+# Crawl delay (optional, to avoid server overload)
 # Crawl-delay: 1
 
-# 说明：
-# 本网站欢迎所有合法搜索引擎的抓取
-# 我们提供免费的债务收入比计算工具
-# 帮助用户评估财务健康状况和贷款资格
+# Description:
+# This website welcomes crawling by all legitimate search engines
+# We provide free debt-to-income ratio calculation tools
+# Helping users assess financial health and loan eligibility
