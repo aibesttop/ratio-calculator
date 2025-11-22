@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!--
+        SEO优化的站点地图
+        优先级说明：1.0 = 最高优先级，0.5 = 中等优先级
+        更改频率：always, hourly, daily, weekly, monthly, yearly, never
+    -->
+
+    <!-- 主页 - 债务收入比计算器 -->
+    <url>
+        <loc>https://ratio-calculator.com/</loc>
+        <lastmod>2024-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- FAQ页面 (如果单独页面) -->
+    <url>
+        <loc>https://ratio-calculator.com/#faq</loc>
+        <lastmod>2024-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 使用条款 (未来可添加) -->
+    <!--
+    <url>
+        <loc>https://ratio-calculator.com/terms</loc>
+        <lastmod>2024-11-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    -->
+
+    <!-- 隐私政策 (未来可添加) -->
+    <!--
+    <url>
+        <loc>https://ratio-calculator.com/privacy</loc>
+        <lastmod>2024-11-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    -->
+
+    <!-- 联系我们 (未来可添加) -->
+    <!--
+    <url>
+        <loc>https://ratio-calculator.com/contact</loc>
+        <lastmod>2024-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    -->
+</urlset>

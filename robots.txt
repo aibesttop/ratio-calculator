@@ -1,0 +1,37 @@
+# robots.txt for 债务收入比计算器
+# SEO优化配置
+
+# 允许所有搜索引擎抓取
+User-agent: *
+Allow: /
+
+# 特别允许主要搜索引擎
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+# 禁止抓取的资源（如果有）
+# Disallow: /admin/
+# Disallow: /private/
+
+# 站点地图位置
+Sitemap: https://ratio-calculator.com/sitemap.xml
+
+# 抓取延迟（可选，避免服务器过载）
+# Crawl-delay: 1
+
+# 说明：
+# 本网站欢迎所有合法搜索引擎的抓取
+# 我们提供免费的债务收入比计算工具
+# 帮助用户评估财务健康状况和贷款资格

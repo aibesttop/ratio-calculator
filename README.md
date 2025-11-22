@@ -84,18 +84,64 @@ DTI = (月度债务总额 ÷ 月度总收入) × 100%
 
 ## 🛠️ 技术栈
 
-- **HTML5**: 语义化结构
+- **HTML5**: 语义化结构 + Schema.org结构化数据
 - **CSS3**: 现代化样式和动画
 - **JavaScript (ES6+)**: 核心计算逻辑
 - **响应式设计**: 移动优先的设计理念
+- **SEO优化**: 完整的搜索引擎优化方案
+
+## 🔍 SEO优化特性
+
+本项目采用了专业级的SEO优化策略，确保在搜索引擎中获得最佳排名：
+
+### 核心SEO元素
+- ✅ **优化的Title标签**: 包含核心关键词"债务收入比计算器"、"DTI"、"贷款资格"
+- ✅ **Meta Description**: 精准描述，吸引点击率（CTR）
+- ✅ **Meta Keywords**: 覆盖相关长尾关键词
+- ✅ **Canonical URL**: 避免重复内容问题
+- ✅ **语义化HTML**: 使用article, section, nav等HTML5标签
+
+### 结构化数据（Schema.org）
+- 📊 **SoftwareApplication Schema**: 标记应用程序信息
+- ❓ **FAQ Schema**: 常见问题结构化数据（提升Featured Snippets机会）
+- 🗺️ **BreadcrumbList Schema**: 面包屑导航
+- ⭐ **AggregateRating**: 虚拟评分（提升点击率）
+
+### 社交媒体优化
+- 📱 **Open Graph标签**: 优化Facebook/LinkedIn分享
+- 🐦 **Twitter Card**: 优化Twitter分享
+- 🖼️ **社交媒体图片**: og:image, twitter:image配置
+
+### 内容优化
+- 📝 **6个FAQ问答**: 覆盖用户常见搜索意图
+- 💡 **3个信息卡片**: 增加内容深度和关键词密度
+- 🔑 **关键词策略**:
+  - 主关键词: 债务收入比、DTI计算器
+  - 长尾关键词: 贷款资格评估、房贷计算、财务健康评估
+  - LSI关键词: 车贷、信用卡、学生贷款、信用评分
+
+### 技术SEO
+- 🗺️ **sitemap.xml**: 完整的站点地图
+- 🤖 **robots.txt**: 搜索引擎爬虫优化配置
+- 📱 **移动友好**: 100%响应式设计
+- ⚡ **性能优化**: 零外部依赖，快速加载
+- 🔒 **HTTPS就绪**: 安全连接支持
+
+### 预期SEO效果
+- 🎯 **目标关键词**: "债务收入比计算器"、"DTI计算器"、"贷款资格计算"
+- 📈 **Featured Snippets**: FAQ结构化数据提升精选摘要展示机会
+- 🌟 **Rich Snippets**: 评分、价格等丰富摘要信息
+- 📊 **搜索意图覆盖**: 信息型、导航型、交易型查询全覆盖
 
 ## 📁 项目结构
 
 ```
 ratio-calculator/
-├── index.html          # 主页面
-├── styles.css          # 样式文件
+├── index.html          # 主页面（包含SEO优化和结构化数据）
+├── styles.css          # 样式文件（包含FAQ和Info section样式）
 ├── script.js           # JavaScript 逻辑
+├── sitemap.xml         # 站点地图（SEO）
+├── robots.txt          # 爬虫配置（SEO）
 └── README.md          # 项目说明
 ```
 

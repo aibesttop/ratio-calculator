@@ -466,12 +466,123 @@ input[type="number"]:hover {
     color: #991b1b;
 }
 
+/* FAQ部分样式 - SEO优化 */
+.faq-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: var(--shadow-lg);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.faq-section h2 {
+    font-size: 1.8rem;
+    color: var(--gray-800);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.faq-item {
+    background: var(--gray-50);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: white;
+    box-shadow: var(--shadow-md);
+    transform: translateX(5px);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: var(--gray-800);
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.faq-item p {
+    color: var(--gray-700);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.faq-item strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Info Section样式 */
+.info-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: var(--shadow-lg);
+    animation: fadeInUp 0.6s ease-out 0.2s;
+    animation-fill-mode: both;
+}
+
+.info-section h2 {
+    font-size: 1.8rem;
+    color: var(--gray-800);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 25px;
+    border: 2px solid var(--gray-200);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    font-size: 1.3rem;
+    color: var(--gray-800);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: var(--gray-700);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.info-card strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* 页脚 */
 footer {
     text-align: center;
     color: white;
     margin-top: 30px;
-    padding: 20px;
+    padding: 30px 20px;
     font-size: 0.95rem;
 }
 
@@ -483,6 +594,29 @@ footer p {
 .disclaimer {
     font-size: 0.85rem;
     opacity: 0.8;
+}
+
+.footer-nav {
+    margin: 15px 0;
+    opacity: 0.85;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-top: 10px;
 }
 
 /* 动画 */
@@ -552,6 +686,29 @@ footer p {
         width: 180px;
         margin-left: -90px;
         font-size: 12px;
+    }
+
+    /* FAQ和Info响应式 */
+    .faq-section,
+    .info-section {
+        padding: 25px;
+    }
+
+    .faq-section h2,
+    .info-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-item {
+        padding: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 20px;
     }
 }
 
