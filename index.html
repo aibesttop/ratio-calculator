@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>债务收入比计算器 - DTI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 债务收入比计算器</h1>
+            <p class="subtitle">Debt-to-Income Ratio Calculator</p>
+            <p class="description">评估您的财务健康状况，了解贷款资格</p>
+        </header>
+
+        <div class="calculator">
+            <!-- 收入部分 -->
+            <section class="income-section">
+                <h2>📈 月度收入</h2>
+                <div class="input-group">
+                    <label for="monthly-income">
+                        月总收入（税前）
+                        <span class="tooltip">?
+                            <span class="tooltip-text">包括工资、奖金、投资收入等所有税前收入</span>
+                        </span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="currency">¥</span>
+                        <input type="number" id="monthly-income" placeholder="例如: 15000" min="0" step="100">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 债务部分 -->
+            <section class="debt-section">
+                <h2>📋 月度债务支出</h2>
+
+                <div class="input-group">
+                    <label for="mortgage">
+                        房贷/房租
+                        <span class="tooltip">?
+                            <span class="tooltip-text">每月房贷还款额或租金</span>
+                        </span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="currency">¥</span>
+                        <input type="number" id="mortgage" placeholder="例如: 4000" min="0" step="100">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="car-loan">
+                        车贷
+                        <span class="tooltip">?
+                            <span class="tooltip-text">每月汽车贷款还款额</span>
+                        </span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="currency">¥</span>
+                        <input type="number" id="car-loan" placeholder="例如: 2000" min="0" step="100">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="credit-card">
+                        信用卡最低还款
+                        <span class="tooltip">?
+                            <span class="tooltip-text">所有信用卡的最低还款额总和</span>
+                        </span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="currency">¥</span>
+                        <input type="number" id="credit-card" placeholder="例如: 1000" min="0" step="100">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="student-loan">
+                        学生贷款
+                        <span class="tooltip">?
+                            <span class="tooltip-text">每月学生贷款还款额</span>
+                        </span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="currency">¥</span>
+                        <input type="number" id="student-loan" placeholder="例如: 800" min="0" step="100">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="other-debt">
+                        其他贷款
+                        <span class="tooltip">?
+                            <span class="tooltip-text">个人贷款、消费贷款等其他月度还款</span>
+                        </span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="currency">¥</span>
+                        <input type="number" id="other-debt" placeholder="例如: 500" min="0" step="100">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 计算按钮 -->
+            <button class="calculate-btn" onclick="calculateDTI()">
+                <span class="btn-text">计算 DTI</span>
+                <span class="btn-icon">→</span>
+            </button>
+
+            <!-- 结果部分 -->
+            <section class="results" id="results" style="display: none;">
+                <h2>📊 计算结果</h2>
+
+                <div class="result-card">
+                    <div class="result-main">
+                        <div class="dti-value" id="dti-value">0%</div>
+                        <div class="dti-label">债务收入比</div>
+                    </div>
+
+                    <div class="result-details">
+                        <div class="detail-item">
+                            <span class="detail-label">月度总收入</span>
+                            <span class="detail-value" id="total-income">¥0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">月度总债务</span>
+                            <span class="detail-value" id="total-debt">¥0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating-card" id="rating-card">
+                    <div class="rating-title" id="rating-title">财务健康评级</div>
+                    <div class="rating-description" id="rating-description"></div>
+                </div>
+
+                <div class="advice-card">
+                    <h3>💡 改善建议</h3>
+                    <ul id="advice-list"></ul>
+                </div>
+
+                <div class="standards-card">
+                    <h3>📌 贷款机构DTI标准参考</h3>
+                    <div class="standards-grid">
+                        <div class="standard-item excellent">
+                            <div class="standard-range">&lt; 28%</div>
+                            <div class="standard-label">优秀</div>
+                            <div class="standard-desc">房贷审批优势明显</div>
+                        </div>
+                        <div class="standard-item good">
+                            <div class="standard-range">28% - 36%</div>
+                            <div class="standard-label">良好</div>
+                            <div class="standard-desc">符合大多数贷款要求</div>
+                        </div>
+                        <div class="standard-item fair">
+                            <div class="standard-range">36% - 43%</div>
+                            <div class="standard-label">一般</div>
+                            <div class="standard-desc">可能需要额外条件</div>
+                        </div>
+                        <div class="standard-item poor">
+                            <div class="standard-range">&gt; 43%</div>
+                            <div class="standard-label">需改善</div>
+                            <div class="standard-desc">贷款审批困难</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 重置按钮 -->
+            <button class="reset-btn" id="reset-btn" onclick="resetCalculator()" style="display: none;">
+                重新计算
+            </button>
+        </div>
+
+        <footer>
+            <p>💡 提示：DTI越低，财务状况越健康，贷款审批越容易</p>
+            <p class="disclaimer">*本计算器仅供参考，实际贷款审批标准以金融机构为准</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
